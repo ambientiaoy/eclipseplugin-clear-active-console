@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="Clear Active Console"
+            categoryId="org.eclipse.ui.category.window"
+            id="net.ambentia.eclipseplugin.console_clear_hotkey.commands.clearActiveConsole">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="net.ambentia.eclipseplugin.console_clear_hotkey.commands.clearActiveConsole"
+            class="net.ambientia.eclipseplugin.console_clear_hotkey.handlers.ClearActiveConsoleHandler">
+      </handler>
+   </extension>
+
+</plugin>
